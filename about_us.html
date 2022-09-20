@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Fitness Gym</title>
+  </head>
+  <body>
+    <!-- heder -->
+
+    <header class="sticky top-0 z-10">
+      <nav class="bg-zinc-900 px-2 sm:px-4 py-5 rounded text-lg">
+        <div
+          class="container flex flex-wrap justify-between items-center mx-auto"
+        >
+          <div
+            class="p-1 bg-gradient-to-r from-lime-400 to-green-600 rounded-lg w-52 text-center"
+          >
+            <a class="flex items-center px-7 py-2 bg-zinc-900 rounded-lg">
+              <div
+                class="font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-lime-400 to-green-600"
+              >
+                FITNESS GYM
+              </div>
+            </a>
+          </div>
+
+          <div class="flex">
+            <button
+              data-collapse-toggle="mobile-menu-4"
+              type="button"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-4"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <div
+            class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+            id="mobile-menu-4"
+          >
+            <ul
+              class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
+            >
+              <li>
+                <a
+                  href="./home.html"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-green-500 text-lg font-bold rounded"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pages.html"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-green-500 text-lg font-bold rounded"
+                  >Pages</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./about_us.html"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-green-500 text-lg font-bold rounded"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./news.html"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-green-500 text-lg font-bold rounded"
+                  >News</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./contact.html"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-green-500 text-lg font-bold rounded"
+                  >Contact</a
+                >
+              </li>
+              <li class="ml-50">
+                <a
+                  class="flex items-center px-7 py-2 bg-gradient-to-r from-lime-400 to-green-600 rounded-lg"
+                >
+                  <div class="font-bold text-zinc-900 text-lg">
+                    call: +98 21 88 22 22 22
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      class="lead-banner w-full h-96 bg-[url('./assets/image/20.webp')] bg-cover bg-no-reapet relative text-white"
+    >
+      <div class="w-full h-full absoluote left-0 top-0 bg-slate-600/50">
+        <div class="pt-64 pl-12">
+          <div class="font-bold text-2xl">About Us</div>
+          <div
+            class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-green-600"
+          >
+            <a href="./home.html">Home</a> / About us
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="w-full bg-[url('./assets/image/19.webp')] bg-cover bg-no-reapet relative text-white"
+    >
+      <div class="w-full h-full absoluote left-0 top-0 bg-slate-600/50">
+        <div
+          class="container flex items-start justify-between m-auto pt-5 gap-10 flex-col lg:flex-row"
+        >
+          <div
+            class="flex flex-1 mb-10 gap-10 flex-col mt-5 items-center lg:items-start"
+          >
+            <div
+              class="p-1 bg-gradient-to-r from-lime-400 to-green-600 w-52 rounded-lg"
+            >
+              <a class="flex items-center px-7 py-2 bg-zinc-900 rounded-lg">
+                <div
+                  class="font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-lime-400 to-green-600"
+                >
+                  FITNESS GYM
+                </div>
+              </a>
+            </div>
+
+            <div class="leading-loose text-lg px-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              illum quidem sit expedita esse aperiam dolorum quis laborum
+              tenetur quae eveniet quod ullam nulla deleniti minus ipsa
+            </div>
+
+            <div class="flex gap-8">
+              <i
+                class="fab fa-pinterest hover:text-green-500 cursor-pointer"
+              ></i>
+              <i
+                class="fab fa-facebook-f hover:text-green-500 cursor-pointer"
+              ></i>
+              <i class="fab fa-twitter hover:text-green-500 cursor-pointer"></i>
+              <i
+                class="fab fa-dribbble hover:text-green-500 cursor-pointer"
+              ></i>
+              <i class="fab fa-behance hover:text-green-500 cursor-pointer"></i>
+              <i
+                class="fab fa-instagram hover:text-green-500 cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-1 mb-10 gap-10 flex-col mt-5 items-left ml-36 leading-4"
+          >
+            <em class="text-xl font-bold">Classess</em>
+            <a class="hover:text-green-500 cursor-pointer"
+              >Bodybuilding Class</a
+            >
+            <a class="hover:text-green-500 cursor-pointer">Fitness Class</a>
+            <a class="hover:text-green-500 cursor-pointer">Yoga Courses</a>
+            <a class="hover:text-green-500 cursor-pointer">Dumbell Class</a>
+            <a class="hover:text-green-500 cursor-pointer">Spinning Class</a>
+            <a class="hover:text-green-500 cursor-pointer">Kangoo Jump Class</a>
+          </div>
+
+          <div class="flex flex-1 mb-10 gap-10 flex-col mt-5 items-left ml-36">
+            <em class="text-xl font-bold">Contact</em>
+            <div class="flex flex-1 flex-col">
+              <div class="text-green-500 underline py-4">Addrress:</div>
+              <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+            </div>
+            <div class="flex flex-1 flex-col">
+              <div class="text-green-500 underline py-4">Phone:</div>
+              <div>+98 21 88 22 22 22</div>
+            </div>
+            <div class="flex flex-1 flex-col">
+              <div class="text-green-500 underline py-4">Email:</div>
+              <div>youremail@mail.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-end justify-center mt-36 p-10">
+          Copyright ©2022 All rights reserved | This template is made with by
+          <a class="pl-3 hover:text-green-500 cursor-pointer">Ali EslamDoost</a>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="flex items-center justify-center fixed right-10 w-10 h-10 bottom-24 bg-gradient-to-b from-lime-400 to-green-600 cursor-pointer shadow-inner scroll-up"
+    >
+      <i class="fas fa-chevron-up text-white"></i>
+    </div>
+
+    <div
+      class="flex items-center justify-center fixed right-10 w-10 h-10 bottom-12 bg-gradient-to-t from-lime-400 to-green-600 cursor-pointer shadow-inner scroll-down"
+    >
+      <i class="fas fa-chevron-down text-white"></i>
+    </div>
+
+    <!-- scripts -->
+    <script src="./scroll.js"></script>
+  </body>
+</html>

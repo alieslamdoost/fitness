@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Fitness Gym</title>
+  </head>
+
+  <body>
+    <!-- header -->
+
+    <header class="sticky top-0 z-10">
+      <nav class="bg-zinc-900 px-2 sm:px-4 py-5 rounded text-lg">
+        <div
+          class="container flex flex-wrap justify-between items-center mx-auto"
+        >
+          <div
+            class="p-1 bg-gradient-to-r from-lime-400 to-green-600 rounded-lg w-52 text-center"
+          >
+            <a class="flex items-center px-7 py-2 bg-zinc-900 rounded-lg">
+              <div
+                class="font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-lime-400 to-green-600"
+              >
+                FITNESS GYM
+              </div>
+            </a>
+          </div>
+
+          <div class="flex">
+            <button
+              data-collapse-toggle="mobile-menu-4"
+              type="button"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-4"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <div
+            class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+            id="mobile-menu-4"
+          >
+            <ul
+              class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
+            >
+              <li>
+                <a
+                  href="./home.html"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-green-500 text-lg font-bold rounded"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pages.html"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-green-500 text-lg font-bold rounded"
+                  >Pages</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./about_us.html"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-green-500 text-lg font-bold rounded"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./news.html"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-green-500 text-lg font-bold rounded"
+                  >News</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./contact.html"
+                  class="block py-2 pr-4 pl-3 text-white hover:text-green-500 text-lg font-bold rounded"
+                  >Contact</a
+                >
+              </li>
+              <li class="ml-50">
+                <a
+                  class="flex items-center px-7 py-2 bg-gradient-to-r from-lime-400 to-green-600 rounded-lg"
+                >
+                  <div class="font-bold text-zinc-900 text-lg">
+                    call: +98 21 88 22 22 22
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- banner -->
+    <div class="flex px-32 flex-wrap justify-between items-center gap-8">
+      <img src="./assets/image/2.gif" alt="fitness image" />
+      <img src="./assets/image/1.webp" alt="fitness image" />
+    </div>
+
+    <!-- explation gym -->
+
+    <div class="flex flex-col flex-wrap mt-24 px-32 relative">
+      <div class="flex flex-col">
+        <p class="text-green-500 font-bold">FITNESS GYM</p>
+        <p class="text-4xl font-bold">Why choose Fitness Gym?</p>
+      </div>
+      <div class="flex flex-wrap justify-between items-start gap-8 mt-12">
+        <p class="flex text-gray-500 w-96 leading-8 mt-12">
+          Donec id mattis est. Proin nunc sapien, gravida ut sapien ut, ultrices
+          faucibus sapien. Proin vehicula varius ex, vel feugiat massa
+          scelerisque id. Nullam vulputate a lectus non molestie. Duis at
+          lobortis neque, in maximus leo. Donec nec blandit ex, in finibus
+          tortor. Curabitur aliquet fermentum ultrices.
+        </p>
+        <p class="flex text-gray-500 w-96 leading-8 mt-12">
+          Proin nunc sapien, gravida ut sapien ut, ultrices faucibus sapien.
+          Proin vehicula varius ex, vel feugiat massa scelerisque id. Nullam
+          vulputate a lectus non molestie. Duis at lobortis neque, in maximus
+          leo. Donec nec blandit ex, in finibus tortor. Curabitur aliquet
+          fermentum ultrices.
+        </p>
+        <div>
+          <img src="./assets/image/3.webp" alt="man atletic" class="" />
+        </div>
+      </div>
+      <div
+        class="flex absolute bottom-40 gap-8 flex-wrap justify-between items-start"
+      >
+        <button
+          class="bg-white text-green-500 hover:bg-green-500 hover:text-white font-bold py-2 px-4 w-60 h-12 border-4 border-green-500 rounded-xl"
+        >
+          GET A MEMBERSHIP
+        </button>
+        <button
+          class="bg-green-500 hover:bg-zinc-700 text-white font-bold py-2 px-4 w-60 h-12 rounded-xl"
+        >
+          FIND OUT MORE
+        </button>
+      </div>
+    </div>
+
+    <!-- Ask question -->
+
+    <div class="bg-[url('./assets/image/8.webp')] bg-cover bg-no-reapet">
+      <div class="flex flex-col px-32 bg-slate-600/80">
+        <div class="flex flex-col w-1/4 mt-24">
+          <p class="text-green-500 font-bold">FITNESS GYM</p>
+          <p class="text-4xl text-white font-bold">Ask the experts</p>
+        </div>
+
+        <div class="flex justify-start items-start gap-8">
+          <p class="text-white mt-24 text-start w-96 italic">
+            Donec id mattis est. Proin nunc sapien, gravida ut sapien ut,
+            ultrices faucibus sapien. Proin vehicula varius ex, vel feugiat
+            massa scelerisque id. Nullam vulputate a lectus non molestie.
+          </p>
+
+          <div
+            class="flex justify-start items-end relative w-full overflow-hidden"
+          >
+            <div>
+              <img src="./assets/image/4.png" alt="coach image" />
+              <div
+                class="flex flex-col items-center justify-center w-48 h-20 bg-slate-900 absolute top-56 left-0"
+              >
+                <p class="text-2xl italic text-white">JULIA SMITH</p>
+                <p class="text-sm text-green-400 italic">PERSONAL TRAINER</p>
+              </div>
+            </div>
+            <div class="absolute left-72">
+              <img src="./assets/image/5.webp" alt="coach image" />
+              <div
+                class="flex flex-col items-center justify-center w-40 h-12 bg-slate-900 absolute top-36 left-16"
+              >
+                <p class="text-lg italic text-white">MICK HAMILTON</p>
+                <p class="text-xs text-green-400 italic">PERSONAL TRAINER</p>
+              </div>
+            </div>
+            <div class="absolute right-48 scale-110 align-middle">
+              <img src="./assets/image/6.webp" alt="coach image" />
+              <div
+                class="flex flex-col items-center justify-center w-40 h-12 bg-slate-900 absolute top-44 left-6"
+              >
+                <p class="text-lg italic text-white">Jack Black</p>
+                <p class="text-xs text-green-400 italic">PERSONAL TRAINER</p>
+              </div>
+            </div>
+            <div class="absolute right-0 scale-110 top-72">
+              <img src="./assets/image/7.webp" alt="coach image" />
+              <div
+                class="flex flex-col items-center justify-center w-36 h-12 bg-slate-900 absolute top-40 left-8"
+              >
+                <p class="text-lg italic text-white">Criss James</p>
+                <p class="text-xs text-green-400 italic">PERSONAL TRAINER</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- feature -->
+
+    <div class="flex flex-wrap px-32 flex-col mt-28">
+      <div class="flex flex-wrap gap-8">
+        <div class="flex flex-col w-96">
+          <div class="flex items-center justify-start gap-4 group">
+            <div
+              class="flex items-center justify-center bg-green-500 w-20 h-20 rounded-full group-hover:bg-gradient-to-r from-lime-400 to-green-600"
+            >
+              <img src="./assets/image/9.webp" alt="" class="w-auto h-auto" />
+            </div>
+            <p class="text-3xl text-bold group-hover:text-green-400">
+              Business School
+            </p>
+          </div>
+          <div class="mt-4 leading-8 text-justify text-lg">
+            Donec id mattis est. Proin nunc sapien, gravida ut sapien ut,
+            ultrices faucibus sapien. Proin vehicula varius ex, vel feugiat
+            massa.
+          </div>
+        </div>
+        <div class="flex flex-col w-96">
+          <div class="flex items-center justify-start gap-4 group">
+            <div
+              class="flex items-center justify-center bg-green-500 w-20 h-20 rounded-full group-hover:bg-gradient-to-r from-lime-400 to-green-600"
+            >
+              <img src="./assets/image/10.webp" alt="" class="w-auto h-auto" />
+            </div>
+            <p class="text-3xl text-bold group-hover:text-green-400">
+              Fitness Pro
+            </p>
+          </div>
+          <div class="mt-4 leading-8 text-justify text-lg">
+            Proin nunc sapien, gravida ut sapien ut, ultrices faucibus sapien.
+            Proin vehicula varius ex, vel feugiat massa scelerisque id.
+          </div>
+        </div>
+        <div class="flex flex-col w-96">
+          <div class="flex items-center justify-start gap-4 group">
+            <div
+              class="flex items-center justify-center bg-green-500 w-20 h-20 rounded-full group-hover:bg-gradient-to-r from-lime-400 to-green-600"
+            >
+              <img src="./assets/image/11.webp" alt="" class="w-auto h-auto" />
+            </div>
+            <p class="text-3xl text-bold group-hover:text-green-400">
+              Yoga Courses
+            </p>
+          </div>
+          <div class="mt-4 leading-8 text-justify text-lg">
+            Nullam vulputate a lectus non molestie. Duis at lobortis neque, in
+            maximus leo. Donec nec blandit ex, in finibus tortor.
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-8 mt-24">
+        <div class="flex flex-col w-96">
+          <div class="flex items-center justify-start gap-4 group">
+            <div
+              class="flex items-center justify-center bg-green-500 w-20 h-20 rounded-full group-hover:bg-gradient-to-r from-lime-400 to-green-600"
+            >
+              <img src="./assets/image/12.webp" alt="" class="w-auto h-auto" />
+            </div>
+            <p class="text-3xl text-bold group-hover:text-green-400">
+              Diet Specialists
+            </p>
+          </div>
+          <div class="mt-4 leading-8 text-justify text-lg">
+            Donec id mattis est. Proin nunc sapien, gravida ut sapien ut,
+            ultrices faucibus sapien. Proin vehicula varius ex, vel feugiat
+            massa.
+          </div>
+        </div>
+        <div class="flex flex-col w-96">
+          <div class="flex items-center justify-start gap-4 group">
+            <div
+              class="flex items-center justify-center bg-green-500 w-20 h-20 rounded-full group-hover:bg-gradient-to-r from-lime-400 to-green-600"
+            >
+              <img src="./assets/image/13.webp" alt="" class="w-auto h-auto" />
+            </div>
+            <p class="text-3xl text-bold group-hover:text-green-400">
+              Swimming Pool
+            </p>
+          </div>
+          <div class="mt-4 leading-8 text-justify text-lg">
+            Proin nunc sapien, gravida ut sapien ut, ultrices faucibus sapien.
+            Proin vehicula varius ex, vel feugiat massa scelerisque id.
+          </div>
+        </div>
+        <div class="flex flex-col w-96">
+          <div class="flex items-center justify-start gap-4 group">
+            <div
+              class="flex items-center justify-center bg-green-500 w-20 h-20 rounded-full group-hover:bg-gradient-to-r from-lime-400 to-green-600"
+            >
+              <img src="./assets/image/14.webp" alt="" class="w-auto h-auto" />
+            </div>
+            <p class="text-3xl text-bold group-hover:text-green-400">
+              Spinning Class
+            </p>
+          </div>
+          <div class="mt-4 leading-8 text-justify text-lg">
+            Nullam vulputate a lectus non molestie. Duis at lobortis neque, in
+            maximus leo. Donec nec blandit ex, in finibus tortor.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tuition -->
+
+    <div
+      class="bg-fixed bg-[url('./assets/image/15.webp')] bg-cover bg-no-reapet mt-24"
+    >
+      <div class="flex px-32 bg-slate-600/80 gap-12">
+        <div
+          class="flex flex-col w-96 bg-white justify-start items-start my-28"
+        >
+          <img src="./assets/image/16.webp" alt="exercise image" />
+          <div class="flex flex-col mx-8 my-12 gap-8">
+            <div>
+              <span class="text-2xl text-green-400">$50</span
+              ><span>/month</span>
+            </div>
+            <div class="text-2xl">Women Fitness Class</div>
+            <div>
+              <ul class="leading-8">
+                <li>
+                  <span class="text-green-400 pr-4">&#11044;</span> Donec
+                  molestie tincidunt tellus
+                </li>
+                <li>
+                  <span class="text-green-400 pr-4">&#11044;</span>Sit amet
+                  aliquet auctor nisi
+                </li>
+                <li>
+                  <span class="text-green-400 pr-4">&#11044;</span>Dut purus
+                  eleifentincid
+                </li>
+              </ul>
+            </div>
+            <button
+              class="bg-white text-green-500 hover:bg-green-500 hover:text-white font-bold py-2 px-4 w-60 h-12 border-4 border-green-500 rounded-xl"
+            >
+              ENROLL NOW
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col w-96 bg-white justify-start items-start my-28"
+        >
+          <img src="./assets/image/17.webp" alt="exercise image" />
+          <div class="flex flex-col mx-8 my-12 gap-8">
+            <div>
+              <span class="text-2xl text-green-400">$75</span
+              ><span>/month</span>
+            </div>
+            <div class="text-2xl">Spinning Class + BONUS</div>
+            <div>
+              <ul class="leading-8">
+                <li>
+                  <span class="text-green-400 pr-4">&#11044;</span> Donec
+                  molestie tincidunt tellus
+                </li>
+                <li>
+                  <span class="text-green-400 pr-4">&#11044;</span>Sit amet
+                  aliquet auctor nisi
+                </li>
+                <li>
+                  <span class="text-green-400 pr-4">&#11044;</span>Dut purus
+                  eleifentincid
+                </li>
+              </ul>
+            </div>
+            <button
+              class="bg-white text-green-500 hover:bg-green-500 hover:text-white font-bold py-2 px-4 w-60 h-12 border-4 border-green-500 rounded-xl"
+            >
+              ENROLL NOW
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col w-96 bg-white justify-start items-start my-28"
+        >
+          <img src="./assets/image/16.webp" alt="exercise image" />
+          <div class="flex flex-col mx-8 my-12 gap-8">
+            <div>
+              <span class="text-2xl text-green-400">$90</span
+              ><span>/month</span>
+            </div>
+            <div class="text-2xl">All Inclusive Gym</div>
+            <div>
+              <ul class="leading-8">
+                <li>
+                  <span class="text-green-400 pr-4">&#11044;</span> Donec
+                  molestie tincidunt tellus
+                </li>
+                <li>
+                  <span class="text-green-400 pr-4">&#11044;</span>Sit amet
+                  aliquet auctor nisi
+                </li>
+                <li>
+                  <span class="text-green-400 pr-4">&#11044;</span>Dut purus
+                  eleifentincid
+                </li>
+              </ul>
+            </div>
+            <button
+              class="bg-white text-green-500 hover:bg-green-500 hover:text-white font-bold py-2 px-4 w-60 h-12 border-4 border-green-500 rounded-xl"
+            >
+              ENROLL NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- week plan -->
+
+    <div class="flex px-32 my-28 w-full gap-8">
+      <div class="flex flex-col w-1/2">
+        <div>
+          <p class="text-green-500 font-bold">FITNESS GYM</p>
+          <p class="text-4xl font-bold">Working Hours</p>
+        </div>
+
+        <table class="table-auto text-gray-400 text-xl mt-16">
+          <tr
+            class="flex justify-between border-b-2 border-slate-200 hover:text-green-400 space-8 py-3"
+          >
+            <td>Monday</td>
+            <td>16:00 - 20:00</td>
+          </tr>
+          <tr
+            class="flex justify-between border-b-2 border-slate-200 hover:text-green-400 space-8 py-3"
+          >
+            <td>Tuesday</td>
+            <td>14:00 - 20:00</td>
+          </tr>
+          <tr
+            class="flex justify-between border-b-2 border-slate-200 hover:text-green-400 space-8 py-3"
+          >
+            <td>Wednesday</td>
+            <td>16:00 - 22:00</td>
+          </tr>
+          <tr
+            class="flex justify-between border-b-2 border-slate-200 hover:text-green-400 space-8 py-3"
+          >
+            <td>Thursday</td>
+            <td>14:00 - 18:00</td>
+          </tr>
+          <tr
+            class="flex justify-between border-b-2 border-slate-200 hover:text-green-400 space-8 py-3"
+          >
+            <td>Friday</td>
+            <td>16:00 - 20:00</td>
+          </tr>
+          <tr
+            class="flex justify-between border-b-2 border-slate-200 hover:text-green-400 space-8 py-3"
+          >
+            <td>Satudray</td>
+            <td>16:00 - 20:00</td>
+          </tr>
+          <tr
+            class="flex justify-between border-b-2 border-slate-200 hover:text-green-400 space-8 py-3"
+          >
+            <td>Sunday</td>
+            <td>Closed</td>
+          </tr>
+        </table>
+      </div>
+      <div class="flex flex-col w-1/2">
+        <div>
+          <p class="text-green-500 font-bold">FITNESS GYM</p>
+          <p class="text-4xl font-bold">Our Newsletter</p>
+        </div>
+        <div class="flex flex-col gap-12 mt-16">
+          <input
+            type="text"
+            class="border-4 rounded-lg px-20 py-4 border-slate-200 focus:outline-none focus:border-4 focus:border-green-400"
+            placeholder="Your Name"
+          />
+          <input
+            type="text"
+            class="border-4 rounded-lg px-20 py-4 border-slate-200 focus:outline-none focus:border-4 focus:border-green-400"
+            placeholder="Your E-mail"
+          />
+          <p class="text-slate-400 italic">
+            *Donec id mattis est. Proin nunc sapien, gravida ut sapien ut,
+            ultrices faucibus sapien. Proin vehicula varius ex, vel feugiat
+            massa scelerisque id.
+          </p>
+
+          <button
+            class="bg-white text-green-500 hover:bg-green-500 hover:text-white font-bold py-2 px-4 w-60 h-12 border-4 border-green-500 rounded-xl"
+          >
+            Subcribe
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer
+      class="w-full bg-[url('./assets/image/19.webp')] bg-cover bg-no-reapet text-white"
+    >
+      <div class="w-full h-full bg-slate-600/50">
+        <div
+          class="container flex items-start justify-between m-auto pt-5 gap-10 flex-col lg:flex-row"
+        >
+          <div
+            class="flex flex-1 mb-10 gap-10 flex-col mt-5 items-center lg:items-start"
+          >
+            <div
+              class="p-1 bg-gradient-to-r from-lime-400 to-green-600 w-52 rounded-lg"
+            >
+              <a class="flex items-center px-7 py-2 bg-zinc-900 rounded-lg">
+                <div
+                  class="font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-lime-400 to-green-600"
+                >
+                  FITNESS GYM
+                </div>
+              </a>
+            </div>
+
+            <div class="leading-loose text-lg px-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              illum quidem sit expedita esse aperiam dolorum quis laborum
+              tenetur quae eveniet quod ullam nulla deleniti minus ipsa
+            </div>
+
+            <div class="flex gap-8">
+              <i
+                class="fab fa-pinterest hover:text-green-500 cursor-pointer"
+              ></i>
+              <i
+                class="fab fa-facebook-f hover:text-green-500 cursor-pointer"
+              ></i>
+              <i class="fab fa-twitter hover:text-green-500 cursor-pointer"></i>
+              <i
+                class="fab fa-dribbble hover:text-green-500 cursor-pointer"
+              ></i>
+              <i class="fab fa-behance hover:text-green-500 cursor-pointer"></i>
+              <i
+                class="fab fa-instagram hover:text-green-500 cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-1 mb-10 gap-10 flex-col mt-5 items-left ml-36 leading-4"
+          >
+            <em class="text-xl font-bold">Classess</em>
+            <a class="hover:text-green-500 cursor-pointer"
+              >Bodybuilding Class</a
+            >
+            <a class="hover:text-green-500 cursor-pointer">Fitness Class</a>
+            <a class="hover:text-green-500 cursor-pointer">Yoga Courses</a>
+            <a class="hover:text-green-500 cursor-pointer">Dumbell Class</a>
+            <a class="hover:text-green-500 cursor-pointer">Spinning Class</a>
+            <a class="hover:text-green-500 cursor-pointer">Kangoo Jump Class</a>
+          </div>
+
+          <div class="flex flex-1 mb-10 gap-10 flex-col mt-5 items-left ml-36">
+            <em class="text-xl font-bold">Contact</em>
+            <div class="flex flex-1 flex-col">
+              <div class="text-green-500 underline py-4">Addrress:</div>
+              <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+            </div>
+            <div class="flex flex-1 flex-col">
+              <div class="text-green-500 underline py-4">Phone:</div>
+              <div>+98 21 88 22 22 22</div>
+            </div>
+            <div class="flex flex-1 flex-col">
+              <div class="text-green-500 underline py-4">Email:</div>
+              <div>youremail@mail.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-end justify-center mt-36 p-10">
+          Copyright ©2022 All rights reserved | This template is made with by
+          <a class="pl-3 hover:text-green-500 cursor-pointer">Ali EslamDoost</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scroll up and down -->
+    <div
+      class="flex items-center justify-center fixed right-10 w-10 h-10 bottom-24 bg-gradient-to-b from-lime-400 to-green-600 cursor-pointer shadow-inner scroll-up"
+    >
+      <i class="fas fa-chevron-up text-white"></i>
+    </div>
+
+    <div
+      class="flex items-center justify-center fixed right-10 w-10 h-10 bottom-12 bg-gradient-to-t from-lime-400 to-green-600 cursor-pointer shadow-inner scroll-down"
+    >
+      <i class="fas fa-chevron-down text-white"></i>
+    </div>
+
+    <!-- scripts -->
+    <script src="./scroll.js"></script>
+  </body>
+</html>
